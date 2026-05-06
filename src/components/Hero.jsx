@@ -15,21 +15,26 @@ export default function Hero() {
 
   useEffect(() => {
     if (titleRef.current) {
-      // wrap each letter in span for letter animation
+      // group letters per-word so the word stays unbreakable on mobile
       const text = titleRef.current.textContent;
       titleRef.current.innerHTML = text
-        .split("")
-        .map((c) =>
-          c === " "
-            ? `<span class="inline-block w-[0.3em]"> </span>`
-            : `<span class="inline-block opacity-0 translate-y-[120%] will-change-transform">${c}</span>`
+        .split(" ")
+        .map(
+          (word) =>
+            `<span class="inline-block whitespace-nowrap align-baseline">${word
+              .split("")
+              .map(
+                (c) =>
+                  `<span class="hero-letter inline-block opacity-0 translate-y-[120%] will-change-transform">${c}</span>`
+              )
+              .join("")}</span>`
         )
-        .join("");
+        .join(`<span class="inline-block w-[0.35em]"></span>`);
 
       anime
         .timeline({ easing: "cubicBezier(0.22,1,0.36,1)" })
         .add({
-          targets: titleRef.current.querySelectorAll("span"),
+          targets: titleRef.current.querySelectorAll(".hero-letter"),
           translateY: ["120%", "0%"],
           opacity: [0, 1],
           duration: 1100,
@@ -77,7 +82,7 @@ export default function Hero() {
           </p>
           <h1
             ref={titleRef}
-            className="font-display text-[16vw] sm:text-[14vw] md:text-[12vw] lg:text-[180px] leading-[0.85] font-light tracking-tight text-ink break-words"
+            className="font-display text-[14vw] sm:text-[13vw] md:text-[12vw] lg:text-[180px] leading-[0.9] font-light tracking-tight text-ink"
             style={{ fontVariationSettings: "'opsz' 144, 'SOFT' 30, 'WONK' 1" }}
           >
             AYUSH KAPIL
