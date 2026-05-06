@@ -1,0 +1,216 @@
+{
+  "selectedTemplate": 2,
+  "headings": {
+    "work": "Professional Experience",
+    "education": "Education",
+    "skills": "Core Competencies & Certifications",
+    "projects": "Projects",
+    "awards": "Awards & Extracurriculars"
+  },
+  "basics": {
+    "name": "AYUSH KAPIL",
+    "email": "ayushkapil7542@gmail.com",
+    "phone": "+91-9819347422",
+    "website": "",
+    "location": {
+      "address": "Kandivali W, Mumbai, Maharashtra 400067, India"
+    }
+  },
+  "education": [
+    {
+      "institution": "VIT, Mumbai University",
+      "location": "Mumbai, India",
+      "area": "Operations and Supply Chain Management",
+      "studyType": "Master in Management Studies (MMS)",
+      "startDate": "June 2020",
+      "endDate": "June 2022",
+      "gpa": "9.37 CGPA"
+    },
+    {
+      "institution": "T.S. Chanakya, Indian Maritime University (IMU)",
+      "location": "Navi Mumbai, India",
+      "area": "Maritime Studies",
+      "studyType": "B.Sc. Nautical Science",
+      "startDate": "Aug 2015",
+      "endDate": "June 2019",
+      "gpa": "1st Division (Consistent ~67% Average across 6 Semesters)"
+    },
+    {
+      "institution": "Bal Niketan Model School",
+      "location": "Chandigarh, India",
+      "area": "Science / General",
+      "studyType": "12th Grade (CBSE)",
+      "startDate": "",
+      "endDate": "2015",
+      "gpa": "70%"
+    },
+    {
+      "institution": "Kapol International School",
+      "location": "Mumbai, India",
+      "area": "General",
+      "studyType": "10th Grade (ICSE)",
+      "startDate": "",
+      "endDate": "2013",
+      "gpa": "85%"
+    }
+  ],
+  "work": [
+    {
+      "company": "Axis Max Life Insurance",
+      "location": "India",
+      "position": "Area Sales Manager",
+      "website": "",
+      "startDate": "Dec 2024",
+      "endDate": "Present",
+      "highlights": [
+        "Serving as Area Sales Manager, driving regional sales targets, managing team performance, and expanding market reach.",
+        "Developing and implementing strategic business plans to achieve sales goals and maximize revenue."
+      ]
+    },
+    {
+      "company": "Kotak Mahindra Bank",
+      "location": "India",
+      "position": "Relationship Manager",
+      "website": "",
+      "startDate": "Aug 2023",
+      "endDate": "Oct 2024",
+      "highlights": [
+        "Managed high-net-worth client relationships, providing tailored financial solutions and wealth management strategies.",
+        "Drove portfolio growth through cross-selling and upselling of banking products and services.",
+        "Ensured high levels of customer satisfaction and retention through proactive engagement and issue resolution."
+      ]
+    },
+    {
+      "company": "HDFC Life",
+      "location": "India",
+      "position": "Corporate Agency Manager",
+      "website": "",
+      "startDate": "June 2022",
+      "endDate": "Aug 2023",
+      "highlights": [
+        "Secured position through campus placement.",
+        "Managed corporate agency partnerships and drove life insurance product sales through bancassurance and allied channels.",
+        "Conducted training and development sessions for channel partners to boost product knowledge and sales efficiency."
+      ]
+    },
+    {
+      "company": "Gamma Marine Training Institute Private Ltd.",
+      "location": "India",
+      "position": "Marine Trainee Intern",
+      "website": "",
+      "startDate": "",
+      "endDate": "3 Months",
+      "highlights": [
+        "Completed a rigorous three-month internship program focused on maritime operations and safety protocols.",
+        "Acquired foundational industry knowledge, demonstrating a strong willingness to learn and adapt to challenging marine environments.",
+        "Applied theoretical concepts from T.S. Chanakya coursework to practical, real-world maritime scenarios."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Safety & Emergency Response",
+      "level": "Certified",
+      "keywords": [
+        "Fire Prevention and Fire Fighting",
+        "Elementary First Aid",
+        "Personal Survival Technique"
+      ]
+    },
+    {
+      "keywords": [
+        "Personal Safety and Social Responsibility"
+      ]
+    },
+    {
+      "name": "Maritime Security & Cargo",
+      "level": "Certified",
+      "keywords": [
+        "Security Training for Seafarers with Designated Duties"
+      ]
+    },
+    {
+      "keywords": [
+        "Basic Training for Liquefied Gas Tanker Cargo Operations"
+      ]
+    },
+    {
+      "keywords": [
+        "Basic Training for Oil and Chemical Tanker Cargo Operations"
+      ]
+    },
+    {
+      "name": "Business & Leadership Skills",
+      "level": "Proficient",
+      "keywords": [
+        "B2B & B2C Sales",
+        "Relationship Management",
+        "Supply Chain Management"
+      ]
+    },
+    {
+      "keywords": [
+        "Leadership & Self-Motivation",
+        "Adaptability in Strange Environments"
+      ]
+    },
+    {
+      "keywords": [
+        " "
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Scientific Model Engineering",
+      "description": "Designed and constructed a functional solar charger model and a detailed star constellation model, demonstrating practical application of engineering and navigational concepts."
+    }
+  ],
+  "awards": [
+    {
+      "title": "First Prize in Model Making",
+      "date": "",
+      "awarder": "T.S. Chanakya",
+      "summary": "Awarded first prize for exceptional design in star constellation model making."
+    },
+    {
+      "title": "Core Member of Band and Guard",
+      "date": "",
+      "awarder": "T.S. Chanakya",
+      "summary": "Selected as a core member of the prestigious T.S. Chanakya Band and Guard."
+    },
+    {
+      "title": "Swimming Representative",
+      "date": "",
+      "awarder": "Indian Maritime University (IMU)",
+      "summary": "Represented the institute in Swimming at the Eighth Foundation Day of IMU held in Chennai."
+    },
+    {
+      "title": "Sports Competitor",
+      "date": "",
+      "awarder": "Inter-District/Inter-School",
+      "summary": "Competitive participant in Inter-District Karate Tournaments and Inter-School Cricket Championships."
+    },
+    {
+      "title": "Science Olympiad Participant",
+      "date": "",
+      "awarder": "CBSE",
+      "summary": "Competed in the Inter-School Science Olympiad conducted by the CBSE board."
+    },
+    {
+      "title": "Active Member",
+      "date": "2015",
+      "awarder": "Swachh Bharat Abhiyan",
+      "summary": "Dedicated community volunteer, serving as an active member of the Swachh Bharat Abhiyan."
+    }
+  ],
+  "sections": [
+    "templates",
+    "profile",
+    "education",
+    "work",
+    "skills",
+    "projects",
+    "awards"
+  ]
+}
