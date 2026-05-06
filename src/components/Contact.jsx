@@ -43,7 +43,7 @@ export default function Contact() {
   }, []);
 
   return (
-    <section id="contact" className="relative px-6 py-32 md:px-12">
+    <section id="contact" className="relative px-6 py-20 md:px-12 md:py-32">
       {/* horizon glow */}
       <div className="pointer-events-none absolute inset-x-0 top-1/2 -z-0 h-[1px] -translate-y-1/2 bg-gradient-to-r from-transparent via-brass/40 to-transparent" />
       <div className="pointer-events-none absolute left-1/2 top-1/2 -z-0 h-[400px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-brass/[0.03] blur-3xl" />
@@ -59,7 +59,7 @@ export default function Contact() {
 
         <h2
           ref={headlineRef}
-          className="text-balance text-center font-display text-5xl md:text-7xl lg:text-8xl font-light leading-[0.95] tracking-tight text-ink"
+          className="text-balance text-center font-display text-4xl font-light leading-[0.95] tracking-tight text-ink sm:text-5xl md:text-7xl lg:text-8xl"
         >
           Open to charters,
           collaborations &
@@ -78,24 +78,24 @@ export default function Contact() {
             <a
               href={`mailto:${basics.email}`}
               data-cursor="hover"
-              className="group relative inline-flex items-center gap-4 rounded-full border border-brass/40 bg-brass/[0.06] px-8 py-4 transition-all duration-500 hover:border-brass hover:bg-brass/15"
+              className="group relative inline-flex max-w-full items-center gap-3 rounded-full border border-brass/40 bg-brass/[0.06] px-5 py-3 transition-all duration-500 hover:border-brass hover:bg-brass/15 sm:gap-4 sm:px-8 sm:py-4"
             >
-              <Send className="h-4 w-4 text-brass-bright" strokeWidth={1.5} />
-              <span className="font-mono text-sm tracking-wider text-ink">
+              <Send className="h-4 w-4 shrink-0 text-brass-bright" strokeWidth={1.5} />
+              <span className="truncate font-mono text-xs tracking-wider text-ink sm:text-sm">
                 {basics.email}
               </span>
-              <ArrowUpRight className="h-4 w-4 text-brass-bright transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" strokeWidth={1.5} />
+              <ArrowUpRight className="h-4 w-4 shrink-0 text-brass-bright transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" strokeWidth={1.5} />
               <span className="pointer-events-none absolute inset-0 rounded-full border border-brass/0 transition-all duration-500 group-hover:scale-110 group-hover:border-brass/20" />
             </a>
 
-            <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-ink-soft">
+            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-ink-soft sm:gap-x-8">
               <a href={`tel:${basics.phone}`} className="editorial-link inline-flex items-center gap-2">
                 <Phone className="h-3.5 w-3.5 text-brass" strokeWidth={1.5} />
-                <span className="font-mono text-sm">{basics.phone}</span>
+                <span className="font-mono text-xs sm:text-sm">{basics.phone}</span>
               </a>
               <span className="inline-flex items-center gap-2">
                 <MapPin className="h-3.5 w-3.5 text-brass" strokeWidth={1.5} />
-                <span className="font-mono text-sm">Kandivali W, Mumbai</span>
+                <span className="font-mono text-xs sm:text-sm">Kandivali W, Mumbai</span>
               </span>
             </div>
           </div>

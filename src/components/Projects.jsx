@@ -6,7 +6,7 @@ import { projects } from "../data/resume.js";
 
 export default function Projects() {
   return (
-    <section id="projects" className="relative px-6 py-32 md:px-12">
+    <section id="projects" className="relative px-6 py-20 md:px-12 md:py-32">
       <div className="mx-auto max-w-7xl">
         <SectionHeader
           index={5}
@@ -19,7 +19,7 @@ export default function Projects() {
         <div className="grid grid-cols-12 gap-8">
           {projects.map((p, i) => (
             <Reveal key={i} delay={i * 0.1} className="col-span-12 lg:col-span-8 lg:col-start-3">
-              <article className="glass corner-frame group relative overflow-hidden p-10 md:p-14">
+              <article className="glass corner-frame group relative overflow-hidden p-7 sm:p-10 md:p-14">
                 {/* Animated star backdrop */}
                 <ConstellationBackdrop />
 
@@ -29,7 +29,7 @@ export default function Projects() {
                     <span className="label">Project № {String(i + 1).padStart(2, "0")}</span>
                   </div>
 
-                  <h3 className="font-display text-4xl md:text-6xl font-light leading-[0.95] tracking-tight text-ink mb-6">
+                  <h3 className="mb-6 font-display text-3xl font-light leading-[0.95] tracking-tight text-ink sm:text-4xl md:text-6xl">
                     {p.name.split(" ").map((w, wi) => (
                       <span key={wi}>
                         {wi === 1 ? (
@@ -43,7 +43,7 @@ export default function Projects() {
 
                   <div className="rule mb-6 max-w-[120px]" />
 
-                  <p className="font-editorial italic text-xl md:text-2xl leading-relaxed text-ink-soft max-w-2xl">
+                  <p className="max-w-2xl font-editorial italic text-base leading-relaxed text-ink-soft sm:text-xl md:text-2xl">
                     {p.description}
                   </p>
 

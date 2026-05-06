@@ -14,7 +14,7 @@ export default function Timeline() {
   const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return (
-    <section id="experience" className="relative px-6 py-32 md:px-12">
+    <section id="experience" className="relative px-6 py-20 md:px-12 md:py-32">
       <div className="mx-auto max-w-7xl">
         <SectionHeader
           index={2}
@@ -34,7 +34,7 @@ export default function Timeline() {
             />
           </div>
 
-          <div className="space-y-16 md:space-y-24">
+          <div className="space-y-12 md:space-y-24">
             {work.map((entry, i) => (
               <Entry key={entry.company + i} entry={entry} index={i} side={i % 2 === 0 ? "left" : "right"} />
             ))}
@@ -48,7 +48,7 @@ export default function Timeline() {
 function Entry({ entry, index, side }) {
   const isLeft = side === "left";
   return (
-    <div className="relative grid grid-cols-12 items-start gap-6">
+    <div className="relative grid grid-cols-12 items-start gap-4 md:gap-6">
       {/* node */}
       <div className="absolute left-[18px] md:left-1/2 top-2 -translate-x-1/2 z-10">
         <Reveal delay={0.1}>
@@ -61,16 +61,16 @@ function Entry({ entry, index, side }) {
 
       {/* date column (mobile: full width) */}
       <div
-        className={`col-span-12 pl-12 md:pl-0 ${
+        className={`col-span-12 pl-10 md:pl-0 ${
           isLeft ? "md:col-span-5 md:text-right md:pr-12" : "md:col-span-5 md:col-start-8 md:pl-12"
         }`}
       >
         <Reveal>
           <div className="flex flex-col gap-1.5">
-            <span className="font-mono text-[10px] uppercase tracking-[0.36em] text-brass">
+            <span className="font-mono text-[9px] uppercase tracking-[0.32em] text-brass sm:text-[10px] sm:tracking-[0.36em]">
               Entry № {String(index + 1).padStart(2, "0")}
             </span>
-            <span className="font-display text-2xl md:text-3xl text-ink font-light">
+            <span className="font-display text-xl text-ink font-light sm:text-2xl md:text-3xl">
               {entry.startDate}
               <span className="text-ink-dim font-editorial italic"> → </span>
               <span className="text-brass-bright">{entry.endDate}</span>
@@ -84,24 +84,24 @@ function Entry({ entry, index, side }) {
 
       {/* content card */}
       <div
-        className={`col-span-12 pl-12 md:pl-0 ${
+        className={`col-span-12 pl-10 md:pl-0 ${
           isLeft ? "md:col-span-5 md:col-start-8 md:pl-12" : "md:col-span-5 md:text-right md:pr-12"
         }`}
       >
         <Reveal delay={0.1}>
-          <div className="glass corner-frame group relative p-7 md:p-8 transition-all duration-500 hover:-translate-y-1 hover:border-brass/30">
+          <div className="glass corner-frame group relative p-5 transition-all duration-500 hover:-translate-y-1 hover:border-brass/30 sm:p-7 md:p-8">
             {/* watermark icon */}
             <Building2
               className="pointer-events-none absolute right-5 top-5 h-12 w-12 text-ink/[0.05]"
               strokeWidth={1}
             />
             <div className={`flex items-start ${isLeft ? "md:justify-end" : ""}`}>
-              <h3 className="font-display text-2xl md:text-[26px] leading-tight font-light tracking-tight text-ink">
+              <h3 className="font-display text-xl leading-tight font-light tracking-tight text-ink sm:text-2xl md:text-[26px]">
                 {entry.position}
               </h3>
             </div>
             <div className={`mt-1.5 flex items-center gap-2 ${isLeft ? "md:justify-end" : ""}`}>
-              <span className="font-editorial italic text-lg text-brass-bright">
+              <span className="font-editorial italic text-base text-brass-bright sm:text-lg">
                 {entry.company}
               </span>
               <ArrowUpRight className="h-3.5 w-3.5 text-brass/60" strokeWidth={1.5} />
@@ -114,7 +114,7 @@ function Entry({ entry, index, side }) {
             <StaggerChildren className={`mt-5 space-y-2.5 ${isLeft ? "md:text-right" : ""}`}>
               {entry.highlights.map((h, hi) => (
                 <StaggerItem key={hi}>
-                  <p className="text-[15px] leading-relaxed text-ink-soft">
+                  <p className="text-sm leading-relaxed text-ink-soft sm:text-[15px]">
                     <span className="text-brass mr-2 font-mono text-xs">→</span>
                     {h}
                   </p>

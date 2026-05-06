@@ -252,17 +252,19 @@ function Rig() {
 /* -------------------------- root -------------------------- */
 
 export default function OceanScene() {
+  const isMobile =
+    typeof window !== "undefined" && window.innerWidth < 768;
   return (
     <Canvas
-      dpr={[1, 2]}
-      gl={{ antialias: true, alpha: true }}
+      dpr={isMobile ? [1, 1.5] : [1, 2]}
+      gl={{ antialias: !isMobile, alpha: true, powerPreference: "high-performance" }}
       camera={{ position: [0, 1.2, 8], fov: 55 }}
       className="!absolute inset-0"
     >
       <color attach="background" args={["#050b14"]} />
       <fog attach="fog" args={["#050b14", 12, 32]} />
       <ambientLight intensity={0.6} />
-      <Constellation />
+      <Constellation count={isMobile ? 700 : 1400} />
       <CompassRing />
       <WavePlane />
       <Rig />

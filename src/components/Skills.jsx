@@ -45,7 +45,7 @@ export default function Skills() {
   const categories = [...new Set(flat.map((s) => s.category))];
 
   return (
-    <section id="skills" className="relative px-6 py-32 md:px-12">
+    <section id="skills" className="relative px-6 py-20 md:px-12 md:py-32">
       <div className="mx-auto max-w-7xl">
         <SectionHeader
           index={4}
@@ -57,25 +57,25 @@ export default function Skills() {
 
         {/* Marquee of skill keywords */}
         <Reveal>
-          <div className="relative mb-20 overflow-hidden border-y hairline py-5">
+          <div className="relative mb-14 overflow-hidden border-y hairline py-4 md:mb-20 md:py-5">
             <div className="marquee-track">
               {[...Array(2)].map((_, dup) => (
-                <div key={dup} className="flex shrink-0 items-center gap-8 px-4">
+                <div key={dup} className="flex shrink-0 items-center gap-6 px-4 sm:gap-8">
                   {flat.map((s, i) => (
                     <span
                       key={i + "_" + dup}
-                      className="font-display text-3xl md:text-4xl font-light text-ink/70 whitespace-nowrap"
+                      className="font-display text-xl font-light text-ink/70 whitespace-nowrap sm:text-2xl md:text-4xl"
                     >
                       {s.keyword}
-                      <span className="mx-8 text-brass-bright">✦</span>
+                      <span className="mx-4 text-brass-bright sm:mx-6 md:mx-8">✦</span>
                     </span>
                   ))}
                 </div>
               ))}
             </div>
             {/* edge fades */}
-            <div className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-midnight-deep to-transparent" />
-            <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-midnight-deep to-transparent" />
+            <div className="pointer-events-none absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-midnight-deep to-transparent sm:w-32" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-midnight-deep to-transparent sm:w-32" />
           </div>
         </Reveal>
 
@@ -86,7 +86,7 @@ export default function Skills() {
             const level = items[0]?.level;
             return (
               <Reveal key={cat || ci} delay={ci * 0.1} className="col-span-12 md:col-span-4">
-                <div className="glass corner-frame group h-full p-7">
+                <div className="glass corner-frame group h-full p-5 sm:p-7">
                   <div className="mb-5 flex items-center justify-between">
                     <span className="label">Certificate № {String(ci + 1).padStart(2, "0")}</span>
                     {level && (
@@ -95,7 +95,7 @@ export default function Skills() {
                       </span>
                     )}
                   </div>
-                  <h3 className="font-display text-2xl font-light leading-tight text-ink mb-5">
+                  <h3 className="mb-5 font-display text-xl font-light leading-tight text-ink sm:text-2xl">
                     {cat}
                   </h3>
                   <StaggerChildren className="space-y-3">

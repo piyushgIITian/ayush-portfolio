@@ -9,7 +9,7 @@ const ICONS = [Trophy, Drum, Waves, Medal, AwardIcon, Hand];
 
 export default function Awards() {
   return (
-    <section id="awards" className="relative px-6 py-32 md:px-12">
+    <section id="awards" className="relative px-6 py-20 md:px-12 md:py-32">
       <div className="mx-auto max-w-7xl">
         <SectionHeader
           index={6}
@@ -24,7 +24,7 @@ export default function Awards() {
             const Icon = ICONS[i % ICONS.length];
             return (
               <StaggerItem key={i} className="col-span-12 sm:col-span-6 lg:col-span-4">
-                <div className="glass corner-frame group relative h-full overflow-hidden p-6 transition-all duration-500 hover:-translate-y-1 hover:border-brass/30">
+                <div className="glass corner-frame group relative h-full overflow-hidden p-5 transition-all duration-500 hover:-translate-y-1 hover:border-brass/30 sm:p-6">
                   {/* watermark seal */}
                   <div className="pointer-events-none absolute -right-6 -top-6 h-28 w-28 rounded-full border border-brass/15" />
                   <div className="pointer-events-none absolute -right-3 -top-3 h-20 w-20 rounded-full border border-brass/10" />
