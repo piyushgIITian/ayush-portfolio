@@ -57,8 +57,8 @@ export default function Provenance() {
           {/* Right: portrait + stats card stack */}
           <div className="col-span-12 lg:col-span-5 space-y-3 lg:pl-6">
             <Reveal>
-              <figure className="glass corner-frame group relative overflow-hidden">
-                <div className="relative aspect-[4/5] w-full overflow-hidden">
+              <figure className="glass corner-frame group relative mx-auto w-full max-w-[229px] overflow-hidden lg:mx-0">
+                <div className="relative aspect-[229/308] w-full overflow-hidden">
                   <img
                     src="/ayush-dp.png"
                     alt="Portrait of Ayush Kapil"
@@ -69,11 +69,11 @@ export default function Provenance() {
                     className="absolute inset-0 h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]"
                   />
                   <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-midnight-deep/85 via-midnight-deep/10 to-transparent" />
-                  <div className="pointer-events-none absolute inset-x-0 bottom-0 p-4 sm:p-5">
+                  <div className="pointer-events-none absolute inset-x-0 bottom-0 p-3 sm:p-4">
                     <div className="font-mono text-[9px] uppercase tracking-[0.32em] text-brass">
                       Bridge → Boardroom
                     </div>
-                    <div className="mt-1 font-editorial italic text-base text-ink sm:text-lg">
+                    <div className="mt-1 font-editorial italic text-base text-ink">
                       Ayush Kapil
                     </div>
                   </div>
