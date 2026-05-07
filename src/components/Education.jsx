@@ -36,10 +36,22 @@ export default function Education() {
                     </p>
                     <p className="mt-1 text-sm text-ink-soft">{edu.area}</p>
                   </div>
-                  <GraduationCap
-                    className="h-6 w-6 shrink-0 text-ink/15 transition-colors group-hover:text-brass sm:h-7 sm:w-7"
-                    strokeWidth={1.2}
-                  />
+                  {isChanakya(edu.institution) ? (
+                    <img
+                      src="/ts-chanakya-logo.png"
+                      alt="T.S. Chanakya crest"
+                      loading="lazy"
+                      decoding="async"
+                      width="261"
+                      height="316"
+                      className="h-12 w-auto shrink-0 opacity-90 transition-opacity group-hover:opacity-100 sm:h-14"
+                    />
+                  ) : (
+                    <GraduationCap
+                      className="h-6 w-6 shrink-0 text-ink/15 transition-colors group-hover:text-brass sm:h-7 sm:w-7"
+                      strokeWidth={1.2}
+                    />
+                  )}
                 </div>
 
                 <div className="rule my-5 opacity-50" />
@@ -74,6 +86,10 @@ function cardSpan(i) {
   if (i === 0) return "col-span-12 md:col-span-7";
   if (i === 1) return "col-span-12 md:col-span-5";
   return "col-span-12 md:col-span-6";
+}
+
+function isChanakya(name = "") {
+  return /chanakya/i.test(name);
 }
 
 function shortenGpa(g) {

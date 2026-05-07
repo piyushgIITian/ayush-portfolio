@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 import anime from "animejs";
 import { Reveal } from "./ui/Reveal";
-import { ArrowUpRight, Mail, MapPin, Phone, Send } from "lucide-react";
+import { ArrowUpRight, Download, Mail, MapPin, Phone, Send } from "lucide-react";
 import { basics } from "../data/resume.js";
 
 export default function Contact() {
@@ -86,6 +86,18 @@ export default function Contact() {
               </span>
               <ArrowUpRight className="h-4 w-4 shrink-0 text-brass-bright transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" strokeWidth={1.5} />
               <span className="pointer-events-none absolute inset-0 rounded-full border border-brass/0 transition-all duration-500 group-hover:scale-110 group-hover:border-brass/20" />
+            </a>
+
+            <a
+              href="/Ayush_Kapil_CV.pdf"
+              download
+              data-cursor="hover"
+              className="group inline-flex items-center gap-2.5 rounded-full border border-ink/15 bg-midnight-deep/40 px-5 py-2.5 backdrop-blur-md transition-colors hover:border-brass/40 hover:bg-brass/[0.06]"
+            >
+              <Download className="h-3.5 w-3.5 text-brass-bright transition-transform group-hover:translate-y-0.5" strokeWidth={1.5} />
+              <span className="font-mono text-[11px] uppercase tracking-[0.25em] text-ink-soft group-hover:text-ink">
+                Download CV · PDF
+              </span>
             </a>
 
             <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-ink-soft sm:gap-x-8">

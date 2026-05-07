@@ -1,0 +1,104 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+cv:
+  name: Ayush Kapil
+  location: Kandivali W, Mumbai, Maharashtra 400067, India
+  email: ayushkapil7542@gmail.com
+  phone: tel:+91-9819347422
+  website: https://ayush-kapil.vercel.app
+  photo: ayush-dp.png
+  sections:
+    summary:
+      - Results-driven sales and relationship management professional with a unique blend of maritime training and an MMS in Operations & Supply Chain Management. Proven track record across banking, insurance, and bancassurance, with strengths in B2B/B2C sales, channel partnerships, and team leadership.
+    education:
+      - institution: VIT, Mumbai University
+        area: Operations and Supply Chain Management
+        degree: MMS
+        location: Mumbai, India
+        start_date: 2020-06
+        end_date: 2022-06
+        highlights:
+          - "GPA: 9.37/10"
+      - institution: T.S. Chanakya, Indian Maritime University (IMU)
+        area: Nautical Science
+        degree: BSc
+        location: Navi Mumbai, India
+        start_date: 2015-08
+        end_date: 2019-06
+        highlights:
+          - "1st Division — Consistent ~62.5% average across 6 semesters"
+      - institution: Bal Niketan Model School (CBSE)
+        area: Science
+        degree: 12th
+        location: Chandigarh, India
+        date: '2015'
+        highlights:
+          - "70%"
+      - institution: Kapol International School (ICSE)
+        area: General
+        degree: 10th
+        location: Mumbai, India
+        date: '2013'
+        highlights:
+          - "85%"
+    experience:
+      - company: Axis Max Life Insurance
+        position: Area Sales Manager
+        location: India
+        start_date: 2024-12
+        end_date: present
+        highlights:
+          - Drive regional sales targets, manage team performance, and expand market reach across the assigned territory.
+          - Develop and implement strategic business plans to achieve sales goals and maximize revenue.
+      - company: Kotak Mahindra Bank
+        position: Relationship Manager
+        location: India
+        start_date: 2023-08
+        end_date: 2024-10
+        highlights:
+          - Managed high-net-worth client relationships, providing tailored financial solutions and wealth management strategies.
+          - Drove portfolio growth through cross-selling and upselling of banking products and services.
+          - Ensured high customer satisfaction and retention through proactive engagement and issue resolution.
+      - company: HDFC Life
+        position: Corporate Agency Manager
+        location: India
+        start_date: 2022-06
+        end_date: 2023-08
+        highlights:
+          - Secured position through campus placement.
+          - Managed corporate agency partnerships and drove life insurance product sales through bancassurance and allied channels.
+          - Conducted training and development sessions for channel partners to improve product knowledge and sales efficiency.
+      - company: Gamma Marine Training Institute Pvt. Ltd.
+        position: Marine Trainee Intern
+        location: India
+        start_date: 2018-01
+        end_date: 2018-04
+        highlights:
+          - Completed a three-month internship focused on maritime operations and safety protocols.
+          - Applied theoretical concepts from T.S. Chanakya coursework to practical, real-world maritime scenarios.
+    skills:
+      - label: Business & Leadership
+        details: B2B & B2C Sales, Relationship Management, Supply Chain Management, Leadership, Adaptability
+      - label: Safety & Emergency Response
+        details: Fire Prevention & Fire Fighting, Elementary First Aid, Personal Survival Technique, Personal Safety & Social Responsibility
+      - label: Maritime Security & Cargo
+        details: Security Training for Seafarers (Designated Duties), Liquefied Gas Tanker Cargo Operations (Basic), Oil & Chemical Tanker Cargo Operations (Basic)
+    projects:
+      - name: Scientific Model Engineering
+        highlights:
+          - Designed and constructed a functional solar charger model and a detailed star constellation model, demonstrating practical application of engineering and navigational concepts.
+    awards_and_extracurriculars:
+      - bullet: First Prize in Model Making, T.S. Chanakya — awarded for exceptional star constellation model.
+      - bullet: Core Member of Band and Guard, T.S. Chanakya.
+      - bullet: Swimming Representative, IMU — represented institute at the Eighth Foundation Day in Chennai.
+      - bullet: Competitive participant in Inter-District Karate Tournaments and Inter-School Cricket Championships.
+      - bullet: Inter-School Science Olympiad participant (CBSE).
+      - bullet: Active Member, Swachh Bharat Abhiyan (2015).
+
+design:
+  theme: sb2nov
+
+locale:
+  language: english
+
+settings:
+  current_date: '2026-05-07'
